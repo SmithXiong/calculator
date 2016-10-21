@@ -6,9 +6,9 @@
 <style type="text/css">
 <!--
 .calculator{
-	width:400px;
-	height:750px;
-	position:relative;
+	width: 400px;
+	height: 750px;
+	position: relative;
 }
 .calcu-head{
 	text-align: left;
@@ -22,36 +22,43 @@ a{
 	float: right;
 	color: #000000;
 }
+.calcu-screen{
+	width: 403px;
+	overflow: hidden;
+
+}
 input[name="calcu-show"]{
-	height:100px;
-	width:398px;
+	height: 100px;
+	line-height: 100px;
+	width: 404px;
 	font-size: 8em;
-	color:#ffffff;
-	background-color:#000000;
-	text-align:right;
-	padding-top:100px;
+	color: #ffffff;
+	background-color: #000000;
+	text-align: right;
+	padding-top: 100px;
 	border: 0px none;
-	float: right;
+	float: left;
+	vertical-align: middle;
 }
 .calcu-btn{
-	width:400px;
+	width: 403px;
 	overflow: hidden;
 
 }
 .calcu-btn ul{
-	width:400px;
-	height:500px;
+	width: 404px;
+	height: 500px;
 	margin: 0px;
 	padding: 0px;
-   	display: inline-table;
-   	margin-right: -2px;
-   	float: right;
-   	margin-bottom: -2px;
+   	list-style: none;
+   	float: left;
 }
 li{
-	width: 99px;
+	width: 100px;
 	height: 100px;
-	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+	float: left;
 	background-color: #ababab;
 	font-size: 50px;
 	text-align: center;
@@ -62,9 +69,10 @@ li{
 }
 li:nth-child(4n){
 	background-color: #FF9800;
+	color: #ffffff;
 }
 li:nth-child(17){
-	width: 199px;
+	border-right: 1px solid #ababab;
 }
 -->
 </style>
@@ -93,12 +101,13 @@ li:nth-child(17){
 				<li>4</li>
 				<li>5</li>
 				<li>6</li>
-				<li>-</li>
+				<li>－</li>
 				<li>1</li>
 				<li>2</li>
 				<li>3</li>
-				<li>+</li>
+				<li>＋</li>
 				<li>0</li>
+				<li></li>
 				<li>.</li>
 				<li>=</li>
 			</ul>
