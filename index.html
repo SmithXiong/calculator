@@ -76,6 +76,7 @@ li:nth-child(17){
 }
 -->
 </style>
+<script charset="utf-8"  language="JavaScript" src="calcu.js" ></script>
 </head>
 <body>
 	<div class="calculator">
@@ -90,26 +91,26 @@ li:nth-child(17){
 		<div class="calcu-screen"><input type="text" name="calcu-show" value="0" readonly="readOnly" /></div>
 		<div class="calcu-btn">
 			<ul >
-				<li>C</li>
+				<li onclick="fnclear()">C</li>
 				<li>+/-</li>
 				<li>%</li>
-				<li>÷</li>
-				<li>7</li>
-				<li>8</li>
-				<li>9</li>
-				<li>×</li>
-				<li>4</li>
-				<li>5</li>
-				<li>6</li>
-				<li>－</li>
-				<li>1</li>
-				<li>2</li>
-				<li>3</li>
-				<li>＋</li>
-				<li>0</li>
-				<li></li>
-				<li>.</li>
-				<li>=</li>
+				<li onclick="command(4)">÷</li>
+				<li onclick="content('7')">7</li>
+				<li onclick="content('8')">8</li>
+				<li onclick="content('9')">9</li>
+				<li onclick="command(3)">×</li>
+				<li onclick="content('4')">4</li>
+				<li onclick="content('5')">5</li>
+				<li onclick="content('6')">6</li>
+				<li onclick="command(2)">－</li>
+				<li onclick="content('1')">1</li>
+				<li onclick="content('2')">2</li>
+				<li onclick="content('3')">3</li>
+				<li onclick="command(1)">＋</li>
+				<li onclick="content('0')">0</li>
+				<li onclick="content('0')"></li>
+				<li >.</li>
+				<li onclick="fnres()">=</li>
 			</ul>
 		</div>
 		<div class="calcu-footer">Author: xiong &lt;xm864802180@163.com&gt; <br>Date:   Sat Oct 22 00:22:32 2016 +0800</div>
