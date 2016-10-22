@@ -31,7 +31,7 @@ input[name="calcu-show"]{
 	height: 100px;
 	line-height: 100px;
 	width: 404px;
-	font-size: 8em;
+	font-size: 5em;
 	color: #ffffff;
 	background-color: #000000;
 	text-align: right;
@@ -88,12 +88,12 @@ li:nth-child(17){
 				</svg> Fork me GitHub
 			</a>
 		</div>
-		<div class="calcu-screen"><input type="text" name="calcu-show" value="0" readonly="readOnly" /></div>
+		<div class="calcu-screen"><input type="text" name="calcu-show" id="calcu-show" value="0" readonly="readOnly" /></div>
 		<div class="calcu-btn">
 			<ul >
 				<li onclick="fnclear()">C</li>
-				<li>+/-</li>
-				<li>%</li>
+				<li onclick="fnminus()">+/-</li>
+				<li onclick="fnpercent()">%</li>
 				<li onclick="command(4)">÷</li>
 				<li onclick="content('7')">7</li>
 				<li onclick="content('8')">8</li>
@@ -109,7 +109,7 @@ li:nth-child(17){
 				<li onclick="command(1)">＋</li>
 				<li onclick="content('0')">0</li>
 				<li onclick="content('0')"></li>
-				<li >.</li>
+				<li onclick="fndot()">.</li>
 				<li onclick="fnres()">=</li>
 			</ul>
 		</div>
