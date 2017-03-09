@@ -140,7 +140,7 @@ function fnres() {
 		case 1:calcu.resnum = calcu.plus(calcu.firstnum,calcu.secondnum);break;
 		case 2:calcu.resnum = calcu.substr(calcu.firstnum,calcu.secondnum);break;
 		case 3:calcu.resnum = calcu.multi(calcu.firstnum,calcu.secondnum);break;
-		case 4:calcu.secondnum===0?calcu.resnum = "错误":calcu.resnum = calcu.divided(calcu.firstnum,calcu.secondnum);break;
+		case 4:calcu.secondnum===0?calcu.resnum = "error":calcu.resnum = calcu.divided(calcu.firstnum,calcu.secondnum);break;
 		default:calcu.resnum = document.getElementsByName('calcu-show')[0].value;
 	}
 	document.getElementsByName('calcu-show')[0].value = calcu.resnum;	
