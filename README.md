@@ -1,4 +1,4 @@
 calculator
 =====
-### html+css+js11 <br/>
+### html+css+js <br/>
 ![image](https://github.com/SmithXiong/calculator/blob/master/calcu.jpg)
